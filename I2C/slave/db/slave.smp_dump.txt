@@ -1,0 +1,6 @@
+
+State Machine - |slave|w_state
+Name w_state.escrevendo w_state.lendo w_state.idle 
+w_state.idle 0 0 0 
+w_state.lendo 0 1 1 
+w_state.escrevendo 1 0 1 

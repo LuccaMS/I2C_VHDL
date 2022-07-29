@@ -1,0 +1,89 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'slave:slv|w_number_to_display[1]'
+Slack : -5.191
+TNS   : -31.199
+
+Type  : Slow 1200mV 85C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7.622
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.083
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'slave:slv|w_number_to_display[1]'
+Slack : 1.063
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'slave:slv|w_number_to_display[1]'
+Slack : 0.401
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 9.743
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'i_CLK'
+Slack : 9.871
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'slave:slv|w_number_to_display[1]'
+Slack : -5.065
+TNS   : -31.031
+
+Type  : Slow 1200mV 0C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 7.788
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.019
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'slave:slv|w_number_to_display[1]'
+Slack : 0.998
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'slave:slv|w_number_to_display[1]'
+Slack : 0.356
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 9.718
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'i_CLK'
+Slack : 9.893
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'slave:slv|w_number_to_display[1]'
+Slack : -2.229
+TNS   : -12.150
+
+Type  : Fast 1200mV 0C Model Setup 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 8.938
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.024
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'slave:slv|w_number_to_display[1]'
+Slack : 0.342
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'slave:slv|w_number_to_display[1]'
+Slack : 0.440
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'i_CLK'
+Slack : 9.666
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'PLL_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 9.780
+TNS   : 0.000
+
+------------------------------------------------------------

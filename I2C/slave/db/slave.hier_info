@@ -1,0 +1,58 @@
+|slave
+i_CLK => SER2PAR:S2P.i_CLK
+i_CLK => w_RX.CLK
+i_CLK => w_ND.CLK
+i_CLK => w_state~4.DATAIN
+i_SCL => process_0.IN0
+i_SDA => w_RX.DATAB
+i_SDA => process_0.IN1
+i_RST => SER2PAR:S2P.i_RST
+i_RST => w_state.escrevendo.OUTPUTSELECT
+i_RST => w_state.lendo.OUTPUTSELECT
+i_RST => w_state.idle.OUTPUTSELECT
+i_RST => w_RX.ENA
+i_RST => w_ND.ENA
+i_COUNT => w_ND.OUTPUTSELECT
+i_COUNT => w_state.OUTPUTSELECT
+i_COUNT => w_state.OUTPUTSELECT
+i_COUNT => w_state.OUTPUTSELECT
+i_COUNT => w_RX.OUTPUTSELECT
+i_EDGE => w_RX.OUTPUTSELECT
+
+
+|slave|SER2PAR:S2P
+i_RST => w_DATA[0].PRESET
+i_RST => w_DATA[1].PRESET
+i_RST => w_DATA[2].PRESET
+i_RST => w_DATA[3].PRESET
+i_RST => w_DATA[4].PRESET
+i_RST => w_DATA[5].PRESET
+i_RST => w_DATA[6].PRESET
+i_RST => w_DATA[7].PRESET
+i_CLK => w_DATA[0].CLK
+i_CLK => w_DATA[1].CLK
+i_CLK => w_DATA[2].CLK
+i_CLK => w_DATA[3].CLK
+i_CLK => w_DATA[4].CLK
+i_CLK => w_DATA[5].CLK
+i_CLK => w_DATA[6].CLK
+i_CLK => w_DATA[7].CLK
+i_ND => w_DATA[0].ENA
+i_ND => w_DATA[7].ENA
+i_ND => w_DATA[6].ENA
+i_ND => w_DATA[5].ENA
+i_ND => w_DATA[4].ENA
+i_ND => w_DATA[3].ENA
+i_ND => w_DATA[2].ENA
+i_ND => w_DATA[1].ENA
+o_DATA[0] <= w_DATA[0].DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[1] <= w_DATA[1].DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[2] <= w_DATA[2].DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[3] <= w_DATA[3].DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[4] <= w_DATA[4].DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[5] <= w_DATA[5].DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[6] <= w_DATA[6].DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[7] <= w_DATA[7].DB_MAX_OUTPUT_PORT_TYPE
+i_RX => w_DATA[0].DATAIN
+
+

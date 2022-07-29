@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_EDGE_UP",
+					"strict" : false
+				},
+				{
+					"name" : "o_EDGE_DOWN",
+					"strict" : false
+				},
+				{
+					"name" : "i_CLK",
+					"strict" : false
+				},
+				{
+					"name" : "i_RST",
+					"strict" : false
+				},
+				{
+					"name" : "i_CLK_UART",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

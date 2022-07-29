@@ -1,0 +1,59 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity tb_i2c is
+end tb_i2c;
+
+architecture behavioral of tb_i2c is
+
+component I2C is 
+PORT(
+	i_RST : in std_logic; --setar qual o botão é o de reset
+	i_CLK : in std_logic; --esse será o clock do FPGA antes do PLL
+	i_START : in std_logic --botão de start global do FPGA
+);
+ end component;
+
+	signal w_RST : std_logic;
+	signal w_CLK : std_logic;
+	signal w_START : std_logic;
+	
+	begin
+	
+	TESTE_I2C : I2C
+	PORT MAP (
+		i_RST => w_RST,
+		i_CLK => w_CLK,
+		i_START => w_START
+	);
+	
+	process 
+	begin
+		w_RST <= '1';
+		wait for 10 ns;
+		w_RST <= '0';
+		wait;
+	end process;
+	
+	--visto que nosso clock vai ser de 50mhz, o ciclo completo é de 20 ns, subida dura 10ns e descida 10ns
+	
+	process
+	begin
+		w_CLK <= '1';
+		wait for 10 ns; 
+		w_CLK <= '0';
+		wait for 10 ns;
+	end process;
+	--da maneira acima pode-se emular um clock de 50 mhz
+	
+	process
+	begin
+	wait for 10 ns;
+	w_START <= '1';
+	wait for 10 ns;
+	w_START <= '0';
+	wait;
+	end process;
+	end behavioral;

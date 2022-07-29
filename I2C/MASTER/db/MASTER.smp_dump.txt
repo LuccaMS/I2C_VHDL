@@ -1,0 +1,5 @@
+
+State Machine - |master|w_state
+Name w_state.enviando 
+w_state.idle 0 
+w_state.enviando 1 

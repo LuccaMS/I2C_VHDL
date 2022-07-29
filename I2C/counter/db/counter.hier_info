@@ -1,0 +1,15 @@
+|counter
+i_RST => w_CONT[0].ACLR
+i_RST => w_CONT[1].ACLR
+i_RST => w_CONT[2].ACLR
+i_RST => w_CONT[3].ACLR
+i_RST => w_CLR.ACLR
+i_CLK => w_CONT[0].CLK
+i_CLK => w_CONT[1].CLK
+i_CLK => w_CONT[2].CLK
+i_CLK => w_CONT[3].CLK
+i_CLK => w_CLR.CLK
+i_NEW_EDGE => U2.IN1
+o_ND <= w_CLR.DB_MAX_OUTPUT_PORT_TYPE
+
+
